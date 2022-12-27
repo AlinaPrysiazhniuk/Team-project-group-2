@@ -1,2 +1,0 @@
-var phone=document.querySelector("[id='milkshakes-modal-tel']"),name2=document.querySelector("[id='milkshakes-modal-name']"),button=document.querySelector("[id='milkshakes-modal-button']");function validate(){button.disabled=!phone.value||!name2.value}phone.addEventListener("input",(function(){validate()})),name2.addEventListener("input",(function(){validate()}));
-//# sourceMappingURL=index.1073baf7.js.map
