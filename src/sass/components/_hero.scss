@@ -1,6 +1,6 @@
 .hero {
     background-color: var(--background-primary-color);
-        padding-top: 99px;
+    padding-top: 99px;
 
     @include tablet {
         padding-top: 80px;
@@ -12,12 +12,15 @@
 }
 
 .hero-container {
-    position: relative;
+
     width: 100%;
-    margin: 0 auto;
+    display: flex;
     max-width: 480px;
+    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+    position: relative;
+    flex-direction: column;
 
     @include tablet {
         max-width: 768px;
@@ -31,7 +34,7 @@
         padding-left: 16px;
         padding-right: 16px;
     }
-    
+
 }
 
 .hero-bg-image {
@@ -93,9 +96,9 @@
     color: var(--primary-text-color);
     margin-bottom: 24px;
 
-@media screen and (max-width: 290px){
-    font-size: 6vw;
-}
+    @media screen and (max-width: 290px) {
+        font-size: 6vw;
+    }
 
 
     @include desktop {
@@ -106,11 +109,11 @@
     }
 }
 
-.hero-title-decor{
+.hero-title-decor {
     font-size: 34px;
     line-height: 0.97;
 
-    @media screen and (max-width: 290px){
+    @media screen and (max-width: 290px) {
         font-size: 10vw;
     }
 
@@ -123,14 +126,16 @@
 .hero-list {
     display: flex;
     align-items: center;
-    margin-bottom: 19px;
+    // margin-bottom: 19px;
+    padding-bottom: 236px;
 
-   
+
 
     @include tablet {
         padding-bottom: 39px;
         margin-bottom: 0;
     }
+
     @include desktop {
         padding-bottom: 109px;
     }
@@ -148,9 +153,9 @@
     color: #131313;
 
     transition: var(--animation);
-    transition-property: color, border-color,transform;
+    transition-property: color, border-color, transform;
 
-    @media screen and (max-width: 284px){
+    @media screen and (max-width: 284px) {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -166,7 +171,7 @@
     border: 2px solid var(--border-modal-color);
     border-radius: 10px;
     max-height: 42px;
-    
+
     @include tablet {
         padding: 10px 32px;
     }
@@ -176,6 +181,7 @@
     border-color: var(--buttons-hover-bg-color);
     transform: scale(1.05);
 }
+
 .hero-products-link:focus {
     border-color: var(--buttons-hover-bg-color);
     color: var(--buttons-focus-text-primary-color);
@@ -193,10 +199,10 @@
     transition: var(--animation);
     transition-property: color;
 
-@media screen and (max-width: 284px){
-padding-left: 12px;
-padding-right: 12px;
-}
+    @media screen and (max-width: 284px) {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 
     @include desktop {
         font-size: 14px;
@@ -228,7 +234,7 @@ padding-right: 12px;
         display: block;
         padding-top: 14px;
     }
-    
+
 }
 
 .institution-uptitle {
@@ -265,7 +271,7 @@ padding-right: 12px;
 
 .institution-item:not(:last-child) {
     margin-bottom: 20px;
-    
+
     @include desktop {
         margin-bottom: 16px;
     }
@@ -273,7 +279,7 @@ padding-right: 12px;
 
 .hero-flex {
     position: static;
-    
+
     @include tablet {
         display: flex;
         justify-content: space-between;
@@ -282,6 +288,7 @@ padding-right: 12px;
 
 .hero-example {
     display: none;
+
     @include tablet {
         display: block;
     }
@@ -348,8 +355,13 @@ padding-right: 12px;
 }
 
 .hero-main-picture {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+
+    @media screen and (max-width: 768px) {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
 
     @include tablet {
         display: block;
