@@ -1,0 +1,85 @@
+<div class="backdrop is-hidden" id='franchise-modal'>
+  <div class="franchise-modal">
+    <button type="button" class="franchise-modal__close" id='franchise-modal-close'>
+      <svg class="franchise-modal__close-icon" width="13" height="13">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="franchise-modal__title">
+      Thank you for your interest in owning an Ice Cream shop
+    </p>
+    <p class="franchise-modal__text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="franchise-modal__form">
+      <label
+        for='franchise-modal-name'
+        class="franchise-modal__label visually__hidden"
+        >Name</label
+      >
+      <input
+        type="text"
+        name="modal-name"
+        class="franchise-modal__input req"
+        id='franchise-modal-name'
+        placeholder="Name"
+        pattern="^[a-zA-Z]+$"
+        title="Use only Latin alphabet"
+        required
+      />
+
+      <label
+        for="franchise-modal-tel"
+        class="franchise-modal__label visually__hidden"
+        >Phone</label
+      >
+      <input
+        type="tel"
+        name="modal-tel"
+        class="franchise-modal__input req"
+        id='franchise-modal-tel'
+        placeholder="Phone"
+        pattern="[0-9]{5,10}"
+        title="no more than 10 digits"
+        required
+      />
+
+      <label for="modal-email" class="franchise-modal__label visually__hidden"
+        >Email</label
+      >
+      <input
+        type="email"
+        name="modal-email"
+        class="franchise-modal__input req"
+        id="modal-email"
+        placeholder="Email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        required
+      />
+
+      <label for="modal-text" class="franchise-modal__textarea visually__hidden"
+        >Comment</label
+      >
+      <textarea
+        name="modal-text"
+        id="modal-text"
+        class="franchise-modal__comment"
+        placeholder="Coment"
+      ></textarea>
+      <button
+        disabled
+        id='franchise-modal-button'
+        type="submit"
+        class="button franchise-modal__button"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<script></script>

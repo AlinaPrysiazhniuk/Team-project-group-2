@@ -1,0 +1,70 @@
+:root {
+--primary-text-color: #FCFCFC;
+--second-text-color: #131313;
+--accent-text-color: #F8D24E;
+--background-primary-color: #84A178;
+--psevdoline-color: #E1E1E1;
+
+--background-modal-color: #FCFCFC;
+--border-modal-color:#F8D24E;
+--input-bg-color: #F8D24E1A;
+--placeholder-color: #131313;
+
+--buttons-default-text-color: #000000;
+--buttons-hover-text-color: #000000;
+--buttons-focus-text-primary-color: #FCFCFC;
+--buttons-focus-text-second-color: #FFFFFF;
+--buttons-disabled-text-primary-color: #000000;
+--buttons-disabled-text-second-color:#ABABAB;
+--buttons-default-bg-color: #F8D24E;
+--buttons-hover-bg-color: #0A8817;
+--buttons-focus-bg-color: #0A8817;
+--buttons-disabled-bg-color: #ABABAB;
+
+--icons-bg-color: #F8D24E;
+--icons-default-color: #84A178;
+--icons-hover-color: #FCFCFC;
+--icons-focus-color: #FCFCFC;
+
+--card-products1-color:#AEC6A5;
+--card-products2-color: #EFD478;
+--card-products3-color: #D6936D;
+
+--address-text-color: #D6936D;
+--workhours-color: #ABABAB;
+--created-color: #7A7A7A;
+
+--input-border-direction: 1px solid #84A178;
+
+--box-shadow-products-desktop: 0px 8px 30px rgba(0, 0, 0, 0.25);
+--box-shadow-products-tablet: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+--box-shadow-products-mobile: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+--box-shadow-buynow-bg: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+--box-shadow-icecream-bg: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+--box-shadow-icecream-kkal: 0px 6px 20px rgba(10, 136, 23, 0.25);
+--box-shadow-icecoffe-bg: 0px 5.26027px 19.726px rgba(215, 183, 40, 0.559);
+--box-shadow-icecoffe-kkal: 0px 6px 20px rgba(215, 183, 40, 0.559);
+--box-shadow-milkshakes-bg: 0px 5.26027px 19.726px rgba(210, 155, 96, 0.559);
+--bow-shadow-milkshakes-kkal: 0px 8px 30px rgba(222, 110, 13, 0.533);
+
+--card1-psevdo-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+--card2-psevdo-color: linear-gradient(0deg, rgba(248, 174, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+--card3-psevdo-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+
+--card1-modal-color: #96AF8C;
+--card2-modal-color:#EFD478;
+--card3-modal-color:#D6936D;
+
+--main-font-family: Montserrat, Times New Roman, Arial, Helvetica, sans-serif;
+--animation: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+--cursor-hover: url(/src/images/cursore.png), pointer;
+--mob-menu-button-fill: #FFFFFF;
+--mob-menu-button-close-fill: #FCFCFC;
+
+--input-validate-border-color: #7a1b0c;
+--input-validate-field-color:  rgb(248, 201, 201);
+
+--slider-dots-color: #D9D9D9;
+}

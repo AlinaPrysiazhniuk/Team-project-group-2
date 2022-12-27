@@ -1,0 +1,363 @@
+
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100vw;
+    background-color:  var(--background-primary-color);
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    padding-top: 12px;
+
+    @include tablet {
+        padding-top: 20px;
+    }
+    @include desktop {
+        padding-top: 12px;
+    }
+
+}
+
+.header-container {
+    display: flex;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.logo-mob,
+.logo-tablet,
+.logo-desktop {
+    box-shadow: 1px 5px 5px rgba(92, 93, 93, 0.776);
+    border-radius: 1px;
+}
+
+
+
+.logo-mob {
+    @media screen and (min-width: 768px){
+        display: none;
+    } 
+}
+
+.logo-tablet {
+    @media screen and (max-width: 767px){
+        display:none;
+    } 
+    @media screen and (min-width: 1200px){
+        display:none;
+    } 
+}
+
+.logo-desktop {
+    @media screen and (max-width:1199px){
+        display: none;
+    }
+}
+
+
+.navigation {
+    padding-top: 32px;
+    margin-left: 308px;
+}
+
+
+.page-list {
+    display: none;
+ 
+    @include tablet {
+   display: none;
+   }
+     
+     @include desktop {
+         display: flex;
+         gap: 28px;
+     }
+ }
+
+.menu-link {
+    padding-top: 32px;
+    padding-bottom: 13px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--primary-text-color);
+    transition: color var(--animation);
+    transition: font-size var(--animation);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+            font-size: 18px;
+            cursor: var(--cursor-hover);
+            transform: scale(1.05);
+        }
+    }
+
+
+.buy {
+    display: none;
+
+    @include tablet {
+    position: absolute;
+    top: 3px;
+    right: 32px;
+    padding-top: 12px;
+    padding-right: 35px;
+    padding-bottom: 12px;
+    padding-left: 36px;
+    border-radius: 10px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+
+    background: var(--buttons-default-bg-color);
+    color: var(--buttons-default-text-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: var(--animation);
+    transition-property: color, background-color, transform;
+
+    &:hover {
+        background-color: var(--buttons-focus-bg-color);
+        color: var(--buttons-hover-text-color);
+        cursor: var(--cursor-hover);
+        transform: scale(1.05);
+    }
+
+    &:focus {
+        background-color: var(--buttons-focus-bg-color);
+        color: var(--buttons-focus-text-primary-color);
+    }    
+    }
+
+    @include desktop {
+        right: 16px;
+        top: 20px;
+    }
+
+}
+
+.buy:hover .icon-buy {
+    fill: var(--buttons-hover-text-color);
+    cursor: var(--cursor-hover);
+}
+
+.buy:focus .icon-buy {
+    fill: var(--buttons-focus-text-second-color);
+}
+
+.mob {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    @include desktop {
+        display: none 
+    }
+}
+
+.mob-list {
+    margin-top: 100px;
+    margin-bottom: 110px;
+
+    @media screen and (min-width: 768px){
+    margin-top: 140px;
+    margin-bottom: 0;
+    }
+}
+
+.mob-open {
+    bottom: 5;
+    right: 20px;
+    @include tablet {
+        right: 204px; 
+    }
+}
+
+.mob-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+
+    @include desktop {
+        display: none 
+    }
+}
+
+.mob-icon-open {
+    fill: var(--mob-menu-button-fill);
+}
+
+.mob__icon--close {
+    fill: var(--mob-menu-button-close-fill);
+}
+
+
+.container--mob {
+    display: none;
+    height: 100%;
+
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+      overflow: auto;
+    } 
+  }
+
+.mob-menu {
+   
+      @media screen and (max-width: 1200px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100dvh;
+        background-color: var(--background-primary-color);
+        padding-top: 20px;
+        padding-right: 32px;
+        padding-left: 32px;
+        transform: translateX(1000%);
+        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &.is-open {
+            transform: translateX(0);
+        }
+      }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 12px;
+        padding-bottom: 64px;
+        padding-right: 20px;
+        padding-left: 32px;
+       
+      }
+  }
+
+
+
+.logo-mob-menu {
+    @media screen and (min-width: 469px) {
+    display: none;
+    }
+}
+
+.logo-mob-menu{
+    position: absolute;
+}
+
+.logo-tablet-menu {
+    position: absolute;
+    left: 32px;
+    @media screen and (max-width: 468px) {
+    display: none;
+    }
+}
+  .mob-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+     
+    @include mobile {
+        gap: 40px;
+    }
+  }
+
+  .mob-link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.22;
+    color: var(--primary-text-color);
+
+    &:hover {
+        color: var(--second-text-color);
+        cursor: var(--cursor-hover);
+    }
+
+    @include mobile {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.23;
+    }
+
+    @media screen and (max-width: 308px) {
+        font-size: 10vw;
+      }
+
+      @media screen and (max-width: 259px) {
+        font-size: 8vw;
+      }
+  }
+
+  .buy-mob {
+    padding-top: 12px;
+    padding-right: 35px;
+    padding-bottom: 12px;
+    padding-left: 36px;
+    border-radius: 10px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+
+    background: var(--buttons-default-bg-color);
+    color: var(--buttons-default-text-color);
+    
+
+    &:hover {
+        background-color: var(--buttons-focus-bg-color);
+        color: var(--buttons-hover-text-color);
+        
+        cursor: var(--cursor-hover);
+    }
+
+    &:focus {
+        background-color: var(--buttons-focus-bg-color);
+        color: var(--buttons-focus-text-primary-color);
+    }   
+    
+    @include tablet {
+        display: none;
+    }
+}
+
+
+.buy-mob:hover .icon-buy {
+    fill: var(--buttons-hover-text-color);
+    cursor: var(--cursor-hover);
+}
+
+.buy-mob:focus .icon-buy {
+    fill: var(--buttons-focus-text-second-color);
+}
+
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+

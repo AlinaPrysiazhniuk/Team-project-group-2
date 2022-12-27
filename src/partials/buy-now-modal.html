@@ -1,0 +1,84 @@
+<div class="backdrop is-hidden" id='now-modal'>
+    <div class="modal">
+        <button type="button" class="btn-close" id='now-modal-close'>
+           <svg class="icon-close" width="13" height="13">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+           </svg>
+        </button>
+        <h2 class="modal-title">Buy now</h2>
+        <ul class="modal-list">
+            <li>
+                <label class="checkbox-label">
+                    <input class="checkbox-input" type="checkbox">
+                     <span class="checkbox-container-ice">
+                        <span class="checkbox-text">ice cream</span> 
+                     <span class="checkbox-circle-ice"></span> 
+                   
+                    <picture>
+                        <source srcset="./images/buy-now-modal/ice-cream.jpg 1x, ./images/buy-now-modal/ice-cream-2x.jpg 2x" />
+                        <img class="checkbox-img" src="./images/buy-now-modal/ice-cream.jpg" alt="ice-cream" width="132" />
+                    </picture>
+                    
+                   
+                </span>
+                </label>
+            </li>
+            <li>
+                <label class="checkbox-label">
+                    <input class="checkbox-input" type="checkbox">
+                    <span class="checkbox-container-coffee">
+                        <span class="checkbox-text">ice coffee</span> 
+                      <span class="checkbox-circle-coffee"></span>
+                       <picture>
+                        <source srcset="./images/buy-now-modal/ice-coffee.jpg 1x, ./images/buy-now-modal/ice-coffee-2x.jpg 2x"/>
+                        <img class="checkbox-img" src="./images/buy-now-modal/ice-coffee.jpg" alt="ice-coffee" width="132" />
+                    </picture>
+                    
+                    
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label class="checkbox-label">
+                    <input class="checkbox-input" type="checkbox">
+                    <span class="checkbox-container-milk">
+                        <span class="checkbox-text">milkshake</span> 
+                    <span class="checkbox-circle-milk"></span>
+                    <picture>
+                        <source srcset="./images/buy-now-modal/milkshake.jpg 1x, ./images/buy-now-modal/milkshake-2x.jpg 2x" />
+                        <img class="checkbox-img" src="./images/buy-now-modal/milkshake.jpg" alt="milkshake" width="132" />
+                    </picture>
+                   
+                   
+                    </span>
+                </label>
+                </li>
+                </ul>
+                <!-- modal form -->
+                 <form class="modal-form">
+                   
+                    <label
+                        for='buy-modal-name'
+                        class="buy-modal__label visually__hidden"
+                        >Name
+                    </label>
+                    <input class="form-input" type="text" name="name" id='buy-modal-name' placeholder="Name" pattern="^[a-zA-Z]+$">
+                   
+                    <label
+                        for='buy-modal-tel'
+                        class="buy-modal__label visually__hidden"
+                        >Phone
+                    </label>
+                    <input class="form-input" type="tel" name="tel" id='buy-modal-tel' placeholder="Phone" pattern="[0-9]{5,10}">
+                    
+                    <textarea class="form-input form-comment" name="comment" id="comment" cols="24" rows="10" placeholder="Comment"></textarea>
+                    <button 
+                    disabled
+                    id='buy-modal-button'
+                    class="form-btn-submit" type="submit">Submit</button>
+                 </form>
+                
+              
+           
+    </div>
+</div>

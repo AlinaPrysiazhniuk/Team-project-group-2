@@ -1,0 +1,440 @@
+<div class="backdrop is-hidden" id="ice-modal">
+  <div class="ingredients-modal">
+    <button class="ingredients-modal__close" type="button" id="ice-modal-close">
+      <svg
+        class="ingredients-modal__close-icone ingredients-modal-ice__close-icone"
+        width="13"
+        height="13"
+      >
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="ingredients-modal__title">Chololate icecream</p>
+    <div class="ingredients-modal-ice__img-wrapper">
+      <picture>
+        <source
+          srcset="
+            ./images/ingredients-modal/icecream.jpg    1x,
+            ./images/ingredients-modal/icecream-2x.jpg 2x,
+            ./images/ingredients-modal/icecream-3x.jpg 3x,
+            ./images/ingredients-modal/icecream-4x.jpg 4x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/ingredients-modal/icecream-mob.jpg    1x,
+            ./images/ingredients-modal/icecream-mob-2x.jpg 2x,
+            ./images/ingredients-modal/icecream-mob-3x.jpg 3x,
+            ./images/ingredients-modal/icecream-mob-4x.jpg 4x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="ingredients-modal__img"
+          src="./images/ingredients-modal/icecream.jpg"
+          alt="Chocolate icecream in a cup"
+        />
+      </picture>
+    </div>
+
+    <ul class="caloric">
+      <li class="caloric__item caloric-ice__item">
+        <span class="caloric__item-text caloric-ice__item-text">320</span>kcal
+      </li>
+      <li class="caloric__item caloric-ice__item">
+        <span class="caloric__item-text caloric-ice__item-text">4g</span
+        >Protein...
+      </li>
+      <li class="caloric__item caloric-ice__item">
+        <span class="caloric__item-text caloric-ice__item-text">8,2g</span>Fats
+      </li>
+      <li class="caloric__item caloric-ice__item">
+        <span class="caloric__item-text caloric-ice__item-text">40,4g</span
+        >Carbs
+      </li>
+    </ul>
+    <p class="ingredients-modal__subtitle">Ingredients</p>
+    <ul class="ingredients-modal__list">
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Milk</p>
+        <span class="ingredients-modal__text">100ml</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Belgian chocolate</p>
+        <span class="ingredients-modal__text">20g</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Cream</p>
+        <span class="ingredients-modal__text">150 ml</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Cocoa powder</p>
+        <span class="ingredients-modal__text">30g</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Sugar</p>
+        <span class="ingredients-modal__text">40g</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Vanilla sugar</p>
+        <span class="ingredients-modal__text">10g</span>
+      </li>
+    </ul>
+    <form class="ingredients-modal__form">
+      <div class="ingredients-modal__field">
+        <label
+          class="ingredients-modal__label visually__hidden"
+          for="icecream-modal-name"
+          >Name</label
+        > 
+        <input
+          class="ingredients-modal__input"
+          type="text"
+          name="user-name"
+          pattern="^[a-zA-Z]+$"
+          placeholder="Name"
+          id='icecream-modal-name'
+          required
+        />
+      </div>
+      <div class="ingredients-modal__field">
+        <label
+          class="ingredients-modal__label visually__hidden"
+          for="icecream-modal-tel"
+          >Phone</label
+        >
+        <input
+          class="ingredients-modal__input"
+          type="tel"
+          name="products-modal-tel"
+          placeholder="Phone"
+          pattern="[0-9]{5,10}"
+          id='icecream-modal-tel'
+          required
+        />
+      </div>
+      <div class="ingredients-modal__field-comment">
+        <label class="ingredients-modal__label visually__hidden" for="user-text"
+          >Comment</label
+        >
+        <textarea
+          class="ingredients-modal__comment"
+          placeholder="Comment"
+          name="user-text"
+          id="user-text1"
+        ></textarea>
+      </div>
+      <button
+        disabled
+        id="icecream-modal-button"
+        class="ingredients-modal__btn"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Модальне вікно для ice-coffee -->
+
+<div class="backdrop is-hidden" id='icecoffe-modal'>
+  <div class="ingredients-modal">
+    <button class="ingredients-modal__close" type="button" id='icecoffe-modal-close'>
+      <svg
+        class="ingredients-modal__close-icone ingredients-modal-icecoffe__close-icone"
+        width="13"
+        height="13"
+      >
+      <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="ingredients-modal__title">Ice coffee</p>
+    <div class="ingredients-modal-icecoffee__img-wrapper">
+      <picture>
+        <source
+          srcset="
+            ./images/ingredients-modal/icecoffee.jpg    1x,
+            ./images/ingredients-modal/icecoffee-2x.jpg 2x,
+            ./images/ingredients-modal/icecoffee-3x.jpg 3x,
+            ./images/ingredients-modal/icecoffee-4x.jpg 4x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/ingredients-modal/icecoffee-mob.jpg    1x,
+            ./images/ingredients-modal/icecoffee-mob-2x.jpg 2x,
+            ./images/ingredients-modal/icecoffee-mob-3x.jpg 3x,
+            ./images/ingredients-modal/icecoffee-mob-4x.jpg 4x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="ingredients-modal__img"
+          src="./images/ingredients-modal/icecoffee.jpg"
+          alt="Ice coffee in a cup"
+        />
+      </picture>
+    </div>
+
+    <ul class="caloric">
+      <li class="caloric__item caloric-icecoffee__item">
+        <span class="caloric__item-text caloric-icecoffee__item-text">185</span
+        >kcal
+      </li>
+      <li class="caloric__item caloric-icecoffee__item">
+        <span class="caloric__item-text caloric-icecoffee__item-text">2,5g</span
+        >Protein...
+      </li>
+      <li class="caloric__item caloric-icecoffee__item">
+        <span class="caloric__item-text caloric-icecoffee__item-text">5,5g</span
+        >Fats
+      </li>
+      <li class="caloric__item caloric-icecoffee__item">
+        <span class="caloric__item-text caloric-icecoffee__item-text"
+          >29,8g</span
+        >Carbs
+      </li>
+    </ul>
+    <p class="ingredients-modal__subtitle">Ingredients</p>
+    <ul class="ingredients-modal__list">
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Milk</p>
+        <span class="ingredients-modal__text">60ml</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Belgian chocolate</p>
+        <span class="ingredients-modal__text">20g</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Cream</p>
+        <span class="ingredients-modal__text">40ml</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Coffee</p>
+        <span class="ingredients-modal__text">200ml</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Sugar</p>
+        <span class="ingredients-modal__text">15g</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Vanilla sugar</p>
+        <span class="ingredients-modal__text">5g</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Ice</p>
+        <span class="ingredients-modal__text">50g</span>
+      </li>
+    </ul>
+    <form class="ingredients-modal__form">
+      <div class="ingredients-modal__field">
+        <label
+          class="ingredients-modal__label visually__hidden"
+          for='icecoffe-modal-name'
+          >Name</label
+        >
+        <input
+          class="ingredients-modal__input"
+          type="text"
+          name="user-name"
+          pattern="^[a-zA-Z]+$"
+          placeholder="Name"
+          id='icecoffe-modal-name'
+          required
+        />
+      </div>
+      <div class="ingredients-modal__field">
+        <label
+          class="ingredients-modal__label visually__hidden"
+          for='icecoffe-modal-tel'
+          >Phone</label
+        >
+        <input
+          class="ingredients-modal__input"
+          type="tel"
+          name="products-modal-tel"
+          placeholder="Phone"
+          pattern="[0-9]{5,10}"
+          id='icecoffe-modal-tel'
+          required
+        />
+      </div>
+      <div class="ingredients-modal__field-comment">
+        <label class="ingredients-modal__label visually__hidden" for="user-text"
+          >Comment</label
+        >
+        <textarea
+          class="ingredients-modal__comment"
+          placeholder="Comment"
+          name="user-text"
+          id="user-text2"
+        ></textarea>
+      </div>
+      <button
+        disabled
+        id='icecoffe-modal-button'
+        class="ingredients-modal__btn"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Модальне вікно для milkshakes -->
+
+<div class="backdrop is-hidden" id='milkshake-modal'>
+  <div class="ingredients-modal">
+    <button
+      class="ingredients-modal__close"
+      type="button"
+      id='milkshake-modal-close'
+    >
+      <svg
+        class="ingredients-modal__close-icone ingredients-modal-milkshakes__close-icone"
+        width="13"
+        height="13"
+      >
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="ingredients-modal__title">Oreo milkshakes</p>
+    <div class="ingredients-modal-milkshake__img-wrapper">
+      <picture>
+        <source
+          srcset="
+            ./images/ingredients-modal/milkshake.jpg    1x,
+            ./images/ingredients-modal/milkshake-2x.jpg 2x,
+            ./images/ingredients-modal/milkshake-3x.jpg 3x,
+            ./images/ingredients-modal/milkshake-4x.jpg 4x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/ingredients-modal/milkshake-mob.jpg    1x,
+            ./images/ingredients-modal/milkshake-mob-2x.jpg 2x,
+            ./images/ingredients-modal/milkshake-mob-3x.jpg 3x,
+            ./images/ingredients-modal/milkshake-mob-4x.jpg 4x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="ingredients-modal__img"
+          src="./images/ingredients-modal/milkshake.jpg"
+          alt="Milkshake in a glass"
+        />
+      </picture>
+    </div>
+
+    <ul class="caloric">
+      <li class="caloric__item caloric-milkshakes__item">
+        <span class="caloric__item-text caloric-milkshakes__item-text">385</span
+        >kcal
+      </li>
+      <li class="caloric__item caloric-milkshakes__item">
+        <span class="caloric__item-text caloric-milkshakes__item-text"
+          >4,5g</span
+        >Protein...
+      </li>
+      <li class="caloric__item caloric-milkshakes__item">
+        <span class="caloric__item-text caloric-milkshakes__item-text"
+          >8,2g</span
+        >Fats
+      </li>
+      <li class="caloric__item caloric-milkshakes__item">
+        <span class="caloric__item-text caloric-milkshakes__item-text"
+          >43,3g</span
+        >Carbs
+      </li>
+    </ul>
+    <p class="ingredients-modal__subtitle">Ingredients</p>
+    <ul class="ingredients-modal__list">
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Milk</p>
+        <span class="ingredients-modal__text">200ml</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Belgian chocolate</p>
+        <span class="ingredients-modal__text">30g</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Cream</p>
+        <span class="ingredients-modal__text">50ml</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Cocoa powder</p>
+        <span class="ingredients-modal__text">15g</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Sugar</p>
+        <span class="ingredients-modal__text">30g</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Vanilla sugar</p>
+        <span class="ingredients-modal__text">10g</span>
+      </li>
+      <li class="ingredients-modal__item">
+        <p class="ingredients-modal__text">Oreo cookies</p>
+        <span class="ingredients-modal__text">15g</span>
+      </li>
+    </ul>
+    <form class="ingredients-modal__form">
+      <div class="ingredients-modal__field">
+        <label
+          class="ingredients-modal__label visually__hidden"
+          for='milkshakes-modal-name'
+          >Name</label
+        >
+        <input
+          class="ingredients-modal__input"
+          type="text"
+          name="user-name"
+          pattern="^[a-zA-Z]+$"
+          placeholder="Name"
+          id='milkshakes-modal-name'
+          required
+        />
+      </div>
+      <div class="ingredients-modal__field">
+        <label
+          class="ingredients-modal__label visually__hidden"
+          for='milkshakes-modal-tel'
+          >Phone</label
+        >
+        <input
+          class="ingredients-modal__input"
+          type="tel"
+          name="products-modal-tel"
+          placeholder="Phone"
+          pattern="[0-9]{5,10}"
+          id='milkshakes-modal-tel'
+          required
+        />
+      </div>
+      <div class="ingredients-modal__field-comment">
+        <label class="ingredients-modal__label visually__hidden" for="user-text"
+          >Comment</label
+        >
+        <textarea
+          class="ingredients-modal__comment"
+          placeholder="Comment"
+          name="user-text"
+          id="user-text3"
+        ></textarea>
+      </div>
+      <button
+        disabled
+        id='milkshakes-modal-button'
+        class="ingredients-modal__btn"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

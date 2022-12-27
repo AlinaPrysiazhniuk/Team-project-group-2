@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Seymour+One&display=swap" 
+      rel="stylesheet">
+        <!--                 Slider               -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>Ice cream</title>
+    <script type="module" src="./js/index.js"></script>
+  
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>  
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
+      <include src="./partials/contacts.html"></include>  
+      <include src="./partials/buy-now-modal.html"></include>
+      <include src="./partials/franchise-modal.html"></include>
+      <include src="./partials/ingredients-modal.html"></include>
+      <include src="./partials/map-modal.html"></include>
+      <include src="./partials/read-more-modal.html"></include>
+      <include src="./partials/buy-now-modal-mob.html"></include>
+
+    </main>
+    <include src="./partials/footer.html"></include>
+    <script type="module" src="./js/buy-now-modal-desktop.js"></script>
+    <script type="module" src="./js/buy-now-modal-mob.js"></script>
+    <!-- <script type="module" src=".//sass/js/read-more.js"></script> -->
+    <script type="module" src="./js/mob-menu.js"></script>
+    <script type="module" src="./js/franchise-modal.js"></script>
+    <script type="module" src="./js/ice-cream-modal.js"></script>
+    <!-- <script type="module" src="./js/menu.js"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./js/slider.js"></script>
+    <script src="./js/disabled/franchise-modal-disabled.js"></script>
+    <script src="./js/disabled/buy-now-modal-disabled.js"></script>
+    <script src="./js/disabled/franchise-modal-disabled.js"></script>
+    <script src="./js/read-more-modal.js"></script>
+   
+    <script src="./js/map-modal.js"></script>
+    <script src="./js/disabled/icecream-modal-disabled.js"></script>
+    <script src="./js/disabled/icecoffe-modal-disabled.js"></script>
+    <script src="./js/ice-coffe-modal.js"></script>
+    <script src="./js/milkshake-modal.js"></script>
+    <script src="./js/disabled/milkshakes-modal-disabled.js"></script>
   </body>
 </html>

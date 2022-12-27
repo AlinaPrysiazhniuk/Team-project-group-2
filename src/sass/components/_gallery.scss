@@ -1,0 +1,46 @@
+.gallery {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: linear-gradient(var(--background-primary-color) 25%,
+            transparent 25%,
+        );
+    
+    @include tablet {
+        background-image: linear-gradient(var(--background-primary-color) 44%,
+        transparent 44%,
+        )
+    }
+
+    @include desktop {
+        background-image: linear-gradient(var(--background-primary-color) 23%,
+                    transparent 23%,
+        )
+    }
+}
+.gallery-item {
+    cursor: var(--cursor-hover);
+}
+
+.gallery-thumb {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.gallery-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+    @include tablet {
+        border-radius: 18px;
+    }
+
+    @include desktop {
+        border-radius: 24px;
+    }
+}
+
+.autoplay > .slick-list {
+    margin-bottom: 0;
+}

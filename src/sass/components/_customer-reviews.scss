@@ -1,0 +1,149 @@
+.customer-reviews {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    
+    @include tablet {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+     @include desktop {
+        padding-top: 140px;
+        padding-bottom: 100px;
+     }
+}
+.slider-item {
+    cursor: var(--cursor-hover);
+}
+.slider-thumb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    width: 85px;
+    height: 85px;
+
+    @include tablet {
+        width: 84px;
+        height: 84px;
+    }
+    
+    @include desktop {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+.slider-photo {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.slider-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    padding: 35px 39px;
+    font-size: 12px;
+    line-height: calc(31/12);
+    text-align: center;
+
+    color: var(--primary-text-color);
+    background-color: var(--background-primary-color);
+    border-radius: 10px;
+
+
+    @include tablet {
+        padding: 28px 80px 29px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(26/14);
+        letter-spacing: 0.04em;
+    }
+
+    @include desktop {
+        padding: 43px 109px;
+        font-size: 16px;
+        line-height: calc(30/16);
+        max-width: 968px;
+    }
+}
+.slider-text-part {
+    text-align: center;
+
+    @media screen and (min-width: 305px) and (max-width: 330px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.slider-meta {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(37/20);
+    color: var(--second-text-color);
+
+    @include tablet {
+        font-size: 16px;
+        line-height: calc(30/16);
+    }
+}
+
+//                         js class styles
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.single-item > .slick-list {
+    margin-bottom: 12px;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+}
+.slick-dots {
+    position: static;
+    display: flex;
+    justify-content: center;
+    column-gap: 18px;
+
+    & li.slick-active button:before {
+        opacity: 1;
+        color: var(--background-primary-color);
+    }
+}
+.slick-dots li {
+    position: relative;
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-dots li button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+
+    &:before {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        opacity: 1;
+        color: var(--slider-dots-color);
+        transition: color var(--animation);
+        cursor: var(--cursor-hover);
+    }
+
+    &:hover:before {
+        color: var(--background-primary-color);
+    }
+}

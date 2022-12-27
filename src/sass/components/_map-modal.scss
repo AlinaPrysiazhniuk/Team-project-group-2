@@ -1,0 +1,117 @@
+.map-modal {
+  width: 280px;
+  padding: 28px 28px;
+  background-color: var(--background-modal-color);
+  border: 2px solid var(--border-modal-color);
+  border-radius: 10px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%) scaleX(1);
+  transition: transform var(--animation);
+  color: var(--second-text-color);
+  
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    min-height: 458px;
+    padding: 32px 60px;
+  }
+}
+
+.map-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  cursor: var(--cursor-hover);
+  border-color: transparent;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+  }
+}
+
+.map-modal__close-icone {
+  width: 13px;
+  height: 13px;
+  transition: fill var(--animation);
+}
+
+.map-modal__close:hover .map-modal__close-icone,
+.map-modal__close:focus .map-modal__close-icone {
+  fill: var(--card1-modal-color);
+}
+
+.map-modal__title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Seymour One', sans-serif;
+  font-size: 16px;
+  line-height: calc(24px / 16px);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: calc(28px / 20px);
+  }
+}
+
+.map-modal__link {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.map-modal__img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.map-modal__btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.map-modal__btn {
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  min-width: 134px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15px / 12px);
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--buttons-default-bg-color);
+  color: var(--second-text-color);
+  border: none;
+  border-radius: 10px;
+  cursor: var(--cursor-hover);
+  transition: background-color var(--animation), color var(--animation);
+
+  @media screen and (min-width: 768px) {
+    min-width: 145px;
+    font-size: 14px;
+    line-height: calc(17px / 14px);
+  }
+}
+
+.map-modal__btn:hover {
+  background-color: var(--buttons-hover-bg-color);
+  color: var(--buttons-hover-text-color);
+}
+
+.map-modal__btn:focus {
+  background-color: var(--buttons-focus-bg-color);
+  color: var(--buttons-focus-text-second-color);
+}

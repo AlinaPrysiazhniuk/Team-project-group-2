@@ -1,0 +1,71 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    font-family: var(--main-font-family);
+    color: var(--primary-text-color);
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-grow: 1;
+  background-image: url(/src/images/background/bg-mobile.jpg);
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(/src/images/background/bg-mobile-2x.jpg);
+    } 
+    
+
+    @media screen and (min-width: 481px) {
+      background-image: url(/src/images/background/bg-tablet.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/src/images/background/bg-tablet-2x.jpg);
+    }
+
+
+  @media screen and (min-width: 769px) {
+    // height: 600px;
+    max-width: 1600px;
+    background-image: url(/src/images/background/bg-desktop.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(/src/images/background/bg-desktop-2x.jpg);
+      }
+  }
+
+ }
+ 
+}
+
+html {
+  scroll-padding-top: 37px;
+
+  @media screen and (min-width: 768px) {
+    scroll-padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    scroll-padding-top: 75px;
+  }
+}
+
+
+
+button:hover,
+a:hover {
+cursor: var(--cursor-hover);
+}
+// button {
+//   box-shadow: 2px 5px 5px rgba(92, 93, 93, 0.776);
+// }
+
