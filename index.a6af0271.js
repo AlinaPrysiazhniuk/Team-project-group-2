@@ -1,0 +1,2 @@
+var phone=document.querySelector("[id='icecoffe-modal-tel']"),user=document.querySelector("[id='icecoffe-modal-name']"),button=document.querySelector("[id='icecoffe-modal-button']");function validate(){button.disabled=!phone.value||!user.value}phone.addEventListener("input",(function(){validate()})),user.addEventListener("input",(function(){validate()}));
+//# sourceMappingURL=index.a6af0271.js.map

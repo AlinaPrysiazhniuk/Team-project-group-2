@@ -1,0 +1,2 @@
+var phone=document.querySelector("[id='franchise-modal-tel']"),user=document.querySelector("[id='franchise-modal-name']"),button=document.querySelector("[id='franchise-modal-button']");function validate(){button.disabled=!phone.value||!user.value}phone.addEventListener("input",(function(){validate()})),user.addEventListener("input",(function(){validate()}));
+//# sourceMappingURL=index.602b015c.js.map
