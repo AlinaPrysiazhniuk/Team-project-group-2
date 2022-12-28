@@ -17,7 +17,8 @@
         }
 }
 
-.form-btn-submit:disabled {
+.form-btn-submit:disabled,
+.form-btn-submit-desktop:disabled {
     background-color: transparent;
     border: 2px solid var(--buttons-disabled-bg-color);
 }
@@ -249,7 +250,8 @@
     line-height: 140%;
     color: var(--second-text-color);
 }
-.form-btn-submit {
+.form-btn-submit,
+.form-btn-submit-desktop {
     width: 114px;
     height: 42px;
     margin: 0 auto;
