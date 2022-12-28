@@ -3,14 +3,13 @@
 body {
     font-family: var(--main-font-family);
     color: var(--primary-text-color);
-  background-attachment: fixed;
   margin-left: auto;
   margin-right: auto;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  flex-grow: 1;
+  // flex-grow: 1;
   background-image: url(/src/images/background/bg-mobile.jpg);
 
 
@@ -33,7 +32,7 @@ body {
 
   @media screen and (min-width: 769px) {
     // height: 600px;
-    max-width: 1600px;
+    // max-width: 1600px;
     background-image: url(/src/images/background/bg-desktop.jpg);
 
       @media (min-device-pixel-ratio: 2),
