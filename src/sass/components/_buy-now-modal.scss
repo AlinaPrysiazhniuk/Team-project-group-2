@@ -3,9 +3,6 @@
     top: 30px;
     left: 50%;
     transform: translate(-50%);
-    // transition: transform;
-    // transition-duration: 250ms;
-    // transition-timing-function: linear;
     z-index: 1;
     width: 280px;
     height: auto;
@@ -20,7 +17,7 @@
         }
 }
 
-.form-btn-submit:disabled{
+.form-btn-submit:disabled {
     background-color: transparent;
     border: 2px solid var(--buttons-disabled-bg-color);
 }
@@ -282,9 +279,7 @@
             background-color: var(--buttons-focus-bg-color);
             color: var(--buttons-focus-text-second-color);
          }
-        //  &:disabled {
-        //     background-color: var(--buttons-disabled-bg-color);
-        //  }
+        
 }
 .icon-close {
      width: 11px;
