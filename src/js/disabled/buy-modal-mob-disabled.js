@@ -1,7 +1,7 @@
 // buy-now-modal
-let phone = document.querySelector("[id='buy-modal-tel']");
-let user = document.querySelector("[id='buy-modal-name']");
-let button = document.querySelector("[id='buy-modal-button']");
+let phone = document.querySelector("[id='buy-modal-mob-tel']");
+let user = document.querySelector("[id='buy-modal-mob-name']");
+let button = document.querySelector("[id='buy-modal-mob-button']");
 phone.addEventListener('input', function() {
   validate();
 });
