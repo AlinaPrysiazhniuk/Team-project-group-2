@@ -1,15 +1,15 @@
 // buy-now-modal
 let phone = document.querySelector("[id='buy-modal-desktop-tel']");
-let name3 = document.querySelector("[id='buy-modal-desktop-name']");
+let name4 = document.querySelector("[id='buy-modal-desktop-name']");
 let button = document.querySelector("[id='buy-modal-desktop-button']");
 phone.addEventListener('input', function() {
   validate();
 });
 
-name3.addEventListener('input', function() {
+name4.addEventListener('input', function() {
  validate();
 });
 
 function validate(){
-button.disabled = !phone.value || !name3.value;
+button.disabled = !phone.value || !name4.value;
 }
