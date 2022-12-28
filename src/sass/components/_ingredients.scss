@@ -1,5 +1,5 @@
 .ingredients-modal {
-  width: 280px;
+  width: 80vw;
   padding: 28px 20px;
   background-color: var(--background-modal-color);
   border: 2px solid var(--border-modal-color);
@@ -10,6 +10,7 @@
   transform: translate(-50%) scaleX(1);
   transition: transform var(--animation);
   color: var(--second-text-color);
+
 
   @media screen and (min-width: 768px) {
     width: 568px;
@@ -44,7 +45,6 @@
   transition: fill var(--animation);
 }
 
-// .ingredients-modal__close.
 
 
 .ingredients-modal__title {
@@ -55,6 +55,7 @@
   font-family: 'Seymour One', sans-serif;
   font-size: 20px;
   line-height: calc(28px / 20px);
+  text-align: center;
   @media screen and (min-width: 768px) {
     width: 100%;
     text-align: center;
@@ -124,6 +125,8 @@
 
 .ingredients-modal__list {
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 768px) {
     margin-bottom: 48px;
   }
@@ -143,7 +146,7 @@
 
 .ingredients-modal__form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -220,7 +223,9 @@
 .ingredients-modal__btn:default {
   padding-top: 12px;
   padding-bottom: 12px;
-  min-width: 132px;
+  width: 132px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: inherit;
   font-weight: 600;
   font-size: 14px;
