@@ -31,13 +31,14 @@
 .franchise-modal__close {
   padding: 0;
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 11px;
+  right: 11px;
 
   border: none;
   background-color: transparent;
   color: var(--second-text-color);
  
+
 
 &:hover{
     cursor: var(--cursor-hover);
@@ -46,6 +47,12 @@
 &:hover .franchise-modal__close-icon {
     fill: var(--accent-text-color);
 }
+
+@include tablet {
+    width: 13px;
+    height: 13px;
+}
+
 }
 
 .franchise-modal__title {

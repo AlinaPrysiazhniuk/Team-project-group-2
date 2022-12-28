@@ -30,8 +30,8 @@ iframe {
 
 .read-modal__close {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 11px;
+  right: 11px;
 
   display: flex;
   align-items: center;
@@ -42,6 +42,11 @@ iframe {
 
   &:hover {
     cursor: var(--cursor-hover);
+  }
+  
+  @include tablet {
+    width: 13px;
+    height: 13px;
   }
 }
 
