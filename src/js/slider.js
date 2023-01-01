@@ -5,7 +5,6 @@ $('.autoplay').slick({
   fade: true,
   dots: false,
   infinite: true,
-  asNavFor: '.single-item',
 });
 
 $('.single-item').slick({

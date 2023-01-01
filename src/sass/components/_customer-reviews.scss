@@ -52,6 +52,9 @@
     color: var(--primary-text-color);
     background-color: var(--background-primary-color);
     border-radius: 10px;
+     @media screen and (max-width: 320px) {
+        white-space: pre-line;
+     }
 
 
     @include tablet {
